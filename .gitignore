@@ -1,0 +1,26 @@
+# Jupyter
+.ipynb_checkpoints/
+# VS Code
+.vscode/
+
+# CatBoost
+catboost_info/
+
+# Datasets
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
