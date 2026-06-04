@@ -2,8 +2,6 @@
 
 This repository contains code and assets for the Stream Flow Prediction challenge (IIIT Lucknow). It includes data preprocessing, model training (XGBoost), and a Streamlit app for inference and visualization.
 
-**Quick start**
-
 - Clone the repo and install dependencies:
 
 ```bash
@@ -15,7 +13,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-- Train / run the example pipeline:
+- Run the pipeline:
 
 ```bash
 python main.py
