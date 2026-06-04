@@ -153,7 +153,7 @@ To test the application:
 
 ---
 
-## Technology Stack
+## Tech Stack
 
 * Python
 * Pandas
