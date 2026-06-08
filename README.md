@@ -56,8 +56,8 @@ Streamflow_prediction/
 
 | Metric   | Score  |
 | -------- | ------ |
-| MAE      | ~18    |
-| RMSE     | ~88    |
+| MAE      | ~20    |
+| RMSE     | ~85    |
 | R² Score | ~0.998 |
 
 ### Kaggle Public Leaderboard
