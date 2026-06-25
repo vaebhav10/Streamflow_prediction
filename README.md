@@ -21,35 +21,6 @@ The solution uses an **XGBoost Regressor** combined with feature engineering tec
 
 ---
 
-## Project Structure
-
-```text
-Streamflow_prediction/
-│
-├── streamlit.py                 # Streamlit dashboard
-├── main.py                      # Training and inference pipeline
-├── requirements.txt             # Project dependencies
-│
-├── src/
-│   ├── preprocess.py            # Feature engineering pipeline
-│   ├── Dataset_split.py         # Data scaling and dataset splitting
-│   └── training.py              # Model training and evaluation
-│
-├── models/
-│   ├── flood_xgb_model.pkl      # Trained XGBoost model
-│   ├── scaler.pkl               # Saved StandardScaler
-│   └── features.pkl             # Feature ordering for inference
-│
-├── demo/
-│   └── sample_input.csv         # Example file for testing
-│
-└── data/
-    ├── train_flood.csv
-    └── test_flood.csv
-```
-
----
-
 ## Model Performance
 
 ### Validation Performance
