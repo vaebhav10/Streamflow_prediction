@@ -1,9 +1,8 @@
-# Streamflow Prediction System | IIIT Lucknow Challenge 2026
+# Streamflow Prediction System
 
 ## Overview
 
-This project was developed for the **IIIT Lucknow Stream Flow Prediction Challenge 2026**. The objective is to predict next-day streamflow using hydrological, meteorological, and watershed-related features.
-
+The objective is to predict next-day streamflow using hydrological, meteorological, and watershed-related features.
 The solution uses an **XGBoost Regressor** combined with feature engineering techniques such as cyclic temporal encoding, rainfall aggregation, and interaction feature consolidation on a csv file with shape **(2571055, 34)**. A Streamlit dashboard is provided for interactive predictions and visualization.
 
 ---
