@@ -3,12 +3,10 @@ import pandas as pd
 import joblib
 from src.preprocess import preprocess_data
 
-# Path configuration
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_DIR = BASE_DIR / "models"
 
-# UI header
 st.set_page_config(page_title='Stream flow prediction',layout='centered')
 st.title("Stream flow prediction dashboard")
 
