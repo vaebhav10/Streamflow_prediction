@@ -32,12 +32,6 @@ The solution uses an **XGBoost Regressor** combined with feature engineering tec
 | R² Score | ~0.998 |
 
 ### Kaggle Public Leaderboard
-
-```text
-KGE Score: 0.99181
-
-```
-
 ---
 
 ## Installation
