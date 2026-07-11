@@ -2,27 +2,20 @@ from pathlib import Path
 import pandas as pd
 
 from src.preprocess import preprocess_data
-from src.Dataset_split import split_scale
-from src.training import model_training,evaluate
+from src.prediction import predict
+from src.feature_engineering import create_features
+
 import time
+start = time.perf_counter()
 
-start=time.perf_counter()
-path = Path(__file__).resolve().parent
-train=pd.read_csv(path/'data/train_flood.csv')
-test=pd.read_csv(path/'data/test_flood.csv')
+BASE_DIR = Path(__file__).resolve().parent
 
-# Dataset cleaning 
-cleaned_train=preprocess_data(train)
-cleaned_test=preprocess_data(test)
+df=pd.read_csv(BASE_DIR/'data/test_flood.csv')
 
-# Splitting dataset and scalling 
-X_train,X_val,y_train,y_val,test_scaled=split_scale(cleaned_train,cleaned_test)
+df =create_features(df)
+cleaned_df = preprocess_data(df)
 
-# training and evaluation on train dataset 
-model=model_training(X_train,X_val,y_train,y_val)
-
-# prediction on test dataset
-test_pred = model.predict(test_scaled)
+pred= predict(cleaned_df)
 
 end =time.perf_counter()
 print ( "Tota time taken :" , end-start)
