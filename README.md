@@ -59,24 +59,6 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## Running the Training Pipeline
-
-```bash
-python main.py
-```
-
-This will:
-
-1. Load the dataset
-2. Apply preprocessing and feature engineering
-3. Scale features
-4. Train the XGBoost model
-5. Evaluate model performance
-6. Generate predictions
-
 ---
 
 ## Running the Streamlit Dashboard
