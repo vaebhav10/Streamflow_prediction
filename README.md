@@ -24,15 +24,14 @@ The solution uses an **XGBoost Regressor** combined with feature engineering tec
 
 ### Validation Performance
 
-| Metric   | Score  |
-| -------- | ------ |
-| MAE      | ~20    |
-| Base MAE | ~43.755|
-| RMSE     | ~85    |
-| R² Score | ~0.998 |
+## 📊 Model Performance Metrics
 
-### Kaggle Public Leaderboard
----
+| Model | MAE | RMSE | NSE | Time |
+|---    |---: |---:  |---:  |---:|
+| Base Error | 43.756 | 140.810 | 0.99569 | — |
+| XGBoost | 30.422 | 99.486 | 0.99785 | 3.040s |
+| CatBoost | 34.564 | 95.506 | 0.99802 | 45.969s |
+| Random Forest | 39.470 | 128.696 | 0.99640 | 309.495s |
 
 ## Installation
 
