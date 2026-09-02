@@ -108,6 +108,5 @@ To test the application:
 * XGBoost
 * Streamlit
 * Joblib
-
----  
--- GitHub Copilot
+* seaborn
+* matplotlib
